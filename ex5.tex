@@ -2,6 +2,14 @@
 
 \section{Do This}
 
+I'm going to give you the instructions for these sessions one more time:
+
+\begin{enumerate} 
+\item You do \emph{not} type in the \verb|$| (unix) or \verb|>| (Windows).
+\item You type in the stuff after this, then hit enter.  If I have \verb|$ cd temp| you type just \verb|cd temp| and hit enter.
+\item The output comes after you hit enter, followed by another \verb|$| or \verb|>| prompt.
+\end{enumerate}
+
 \begin{code}{Linux/OSX Exercise 5}
 \begin{Verbatim}
 << d['code/ex5.sh-session'] >>
@@ -16,11 +24,20 @@
 
 \section{You Learned This}
 
-This is what you learned.  Take notes and come back if you didn't get it.
+You are now changing into directories using paths.  You made all these directories
+in the last exercise, and now you're just moving around inside them with the
+\program{cd} command.  In my session above I also use \program{pwd} to check
+where I am, so remember, you don't type the output that \program{pwd} prints.
+For example, on line 3 you see \verb|~/temp| but that's the output of \program{pwd}
+from the prompt above it.  \emph{Do not type this in}.
+
+You should also see how I use the \verb|..| to move "up" in the tree and path.
 
 \section{Do More}
 
 \begin{enumerate}
-\item Something more to do to get better at this.
+\item cd to the \file{joe} directory with one command.
+\item cd back to \file{temp} with one command, but not further above that.
+\item Find out how to cd to your home directory with one command.
 \end{enumerate}
 
