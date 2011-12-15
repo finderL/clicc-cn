@@ -16,11 +16,30 @@
 
 \section{You Learned This}
 
-This is what you learned.  Take notes and come back if you didn't get it.
+You're now getting into programmer territory with this command but it's so
+handy I have to teach it to you.  These commands let you temporarily go
+to a different directory and then come back, or easily switch between
+two.
+
+The \program{pushd} command takes your current directory and "pushes" it
+onto a list for later, then it \emph{changes} to another directory.  It's
+like saying, "Save where I am then go here."
+
+The \program{popd} command takes the last directory you pushed and "pops"
+it off, taking you back there.
+
+Finally, \program{pushd} if you run it by itself with no arguments will
+switch between your current directory and the last one you pushed.  It's
+an easy way to switch between two directories.
 
 \section{Do More}
 
 \begin{enumerate}
-\item Something more to do to get better at this.
+\item Use these commands to move around directories all over your
+    computer.
+\item Remove the \file{i/like/icecream} directories and make your own, then
+    move around in them.
+\item Explain to yourself the output that \program{pushd} and \program{popd}
+    print out to you.  Notice how it works like a stack?
 \end{enumerate}
 
