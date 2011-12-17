@@ -1,86 +1,86 @@
-PS C:\Users\zed> cd temp
-PS C:\Users\zed\temp> pwd
+> cd temp
+> pwd
 
 Path
 ----
 C:\Users\zed\temp
 
 
-PS C:\Users\zed\temp> cd stuff
-PS C:\Users\zed\temp\stuff> pwd
+> cd stuff
+> pwd
 
 Path
 ----
 C:\Users\zed\temp\stuff
 
 
-PS C:\Users\zed\temp\stuff> cd things
-PS C:\Users\zed\temp\stuff\things> pwd
+> cd things
+> pwd
 
 Path
 ----
 C:\Users\zed\temp\stuff\things
 
 
-PS C:\Users\zed\temp\stuff\things> cd frank
-PS C:\Users\zed\temp\stuff\things\frank> pwd
+> cd frank
+> pwd
 
 Path
 ----
 C:\Users\zed\temp\stuff\things\frank
 
 
-PS C:\Users\zed\temp\stuff\things\frank> cd joe
-PS C:\Users\zed\temp\stuff\things\frank\joe> pwd
+> cd joe
+> pwd
 
 Path
 ----
 C:\Users\zed\temp\stuff\things\frank\joe
 
 
-PS C:\Users\zed\temp\stuff\things\frank\joe> cd alex
-PS C:\Users\zed\temp\stuff\things\frank\joe\alex> pwd
+> cd alex
+> pwd
 
 Path
 ----
 C:\Users\zed\temp\stuff\things\frank\joe\alex
 
 
-PS C:\Users\zed\temp\stuff\things\frank\joe\alex> cd john
-PS C:\Users\zed\temp\stuff\things\frank\joe\alex\john> pwd
+> cd john
+> pwd
 
 Path
 ----
 C:\Users\zed\temp\stuff\things\frank\joe\alex\john
 
 
-PS C:\Users\zed\temp\stuff\things\frank\joe\alex\john> cd ..
-PS C:\Users\zed\temp\stuff\things\frank\joe\alex> cd ..
-PS C:\Users\zed\temp\stuff\things\frank\joe> cd ..
-PS C:\Users\zed\temp\stuff\things\frank> pwd
+> cd ..
+> cd ..
+> cd ..
+> pwd
 
 Path
 ----
 C:\Users\zed\temp\stuff\things\frank
 
 
-PS C:\Users\zed\temp\stuff\things\frank> cd ../..
-PS C:\Users\zed\temp\stuff> pwd
+> cd ../..
+> pwd
 
 Path
 ----
 C:\Users\zed\temp\stuff
 
 
-PS C:\Users\zed\temp\stuff> cd ..
-PS C:\Users\zed\temp> cd ..
-PS C:\Users\zed> cd temp/stuff/things/frank/joe/alex/john
-PS C:\Users\zed\temp\stuff\things\frank\joe\alex\john> cd ../../../../../../../
-PS C:\Users\zed> pwd
+> cd ..
+> cd ..
+> cd temp/stuff/things/frank/joe/alex/john
+> cd ../../../../../../../
+> pwd
 
 Path
 ----
 C:\Users\zed
 
 
-PS C:\Users\zed>
+>

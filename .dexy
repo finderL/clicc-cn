@@ -7,7 +7,7 @@
     "*.sql|pyg|l": {},
     "*.conf": {},
     "*Makefile": {},
-    "*.sh-session": {}, 
+    "*.sh-session|pyg|l": {}, 
     "*.out": {},
     "*.css|jinja" : {  },
     "*.cfg|jinja" : {  },

@@ -1,7 +1,7 @@
-PS C:\Users\zed> pwd
+> pwd
 
 Path
 ----
 C:\Users\zed
 
-PS C:\Users\zed>
+>
