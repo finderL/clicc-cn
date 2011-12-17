@@ -1,3 +1,3 @@
-PS C:\Users\zed> whoami
+> whoami
 zed-media\zed
-PS C:\Users\zed>
+>
