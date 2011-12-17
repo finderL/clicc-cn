@@ -19,7 +19,7 @@ $(FINAL).pdf:
 
 html: 
 	cd output && htlatex $(FINAL).tex "book,index=1,2,next,fn-in"
-	gsed -i -f clean.sed output/*.html
+	sed -i -f clean.sed output/*.html
 	cat output/fixes.css >> output/$(FINAL).css
 	
 view: $(FINAL).pdf
