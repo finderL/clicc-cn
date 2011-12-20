@@ -1,7 +1,5 @@
 $ cd temp
-$ mkdir i
-$ mkdir i/like
-$ mkdir i/like/icecream
+$ mkdir -p i/like/icecream
 $ pushd i/like/icecream
 ~/temp/i/like/icecream ~/temp
 $ popd
