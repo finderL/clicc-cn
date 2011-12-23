@@ -1,9 +1,9 @@
 > cd ..
 > cd temp
-> ex15.txt
+> echo "I am a new file." > ex15.txt
 > cat ex15.txt
 I am a new file.
-> another.txt
+> cat ex15.txt > another.txt
 > cat another.txt
 I am a new file.
 >
