@@ -34,7 +34,7 @@ d----        12/22/2011   4:52 PM            something
 
 
 > mv oldplace newplace
-> ls .\newplace\
+> ls newplace
 
 
     Directory: C:\Users\zed\temp\newplace
