@@ -52,7 +52,7 @@ Mode                LastWriteTime     Length Name
 d----        12/22/2011   4:52 PM            something
 
 
-> cp .\awesome.txt something/
+> cp awesome.txt something/
 > ls
 
 
@@ -80,7 +80,7 @@ Mode                LastWriteTime     Length Name
 
 
 > cp -recurse something newplace
-> ls .\newplace
+> ls newplace
 
 
     Directory: C:\Users\zed\temp\newplace
