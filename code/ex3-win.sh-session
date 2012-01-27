@@ -1,3 +1,3 @@
-> whoami
-zed-media\zed
+> hostname
+zed-PC
 >

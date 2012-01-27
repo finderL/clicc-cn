@@ -1,3 +1,3 @@
-$ whoami
-zedshaw
+$ hostname
+Zeds-MacBook-Pro.local
 $
