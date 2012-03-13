@@ -14,7 +14,7 @@
 
 You're getting into programmer territory with these commands, but they're so
 handy I have to teach them to you.  These commands let you temporarily go
-to a different directory and then come back to easily switch between the
+to a different directory and then come back, easily switching between the
 two.
 
 The \program{pushd} command takes your current directory and "pushes" it
@@ -24,9 +24,9 @@ like saying, "Save where I am, then go here."
 The \program{popd} command takes the last directory you pushed and "pops"
 it off, taking you back there.
 
-Finally, \program{pushd}, if you run it by itself with no arguments, will
+Finally, on Unix \program{pushd}, if you run it by itself with no arguments, will
 switch between your current directory and the last one you pushed.  It's
-an easy way to switch between two directories.
+an easy way to switch between two directories.  \emph{This does not work in PowerShell.}
 
 \section{Do More}
 
@@ -37,5 +37,8 @@ an easy way to switch between two directories.
     move around in them.
 \item Explain to yourself the output that \program{pushd} and \program{popd}
     print out to you.  Notice how it works like a stack?
+\item You already know this, but remember that \verb|mkdir -p| will
+    make an entire path even if all the directories don't exist.  That's what
+    I did very first for this exercise.
 \end{enumerate}
 

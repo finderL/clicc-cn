@@ -1,6 +1,6 @@
 JUNK_FILES=$(FINAL).* *.aux *.log styles/*.aux
 SOURCE=book
-WEBSITE=/var/www/learncodethehardway.org/cli/
+WEBSITE=learncodethehardway.org:/var/www/learncodethehardway.org/cli/
 FINAL=cli-crash-course
 
 book:
@@ -19,7 +19,7 @@ $(FINAL).pdf:
 
 html: 
 	cd output && htlatex $(FINAL).tex "book,index=1,2,next,fn-in"
-	sed -i -f clean.sed output/*.html
+	gsed -i -f clean.sed output/*.html
 	cat output/fixes.css >> output/$(FINAL).css
 	
 view: $(FINAL).pdf

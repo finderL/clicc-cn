@@ -25,6 +25,14 @@ inside of more directories.  This is called a "path" and it's a way of saying
 set of directions to the computer of where you want to put something in the tree
 of folders (directories) that make up your computer's hard disk.
 
+
+\begin{aside}{Windows, Slashes And Backslashes}
+In this book I'm using the \verb|/| (slash) character for all paths since they work
+the same on all computers now.  However, Windows users will need to know that you can
+also use the \verb|\| (backslash) characters and other Windows users will typically
+expect those at times.
+\end{aside}
+
 \section{Do More}
 
 \begin{enumerate}
@@ -32,5 +40,7 @@ of folders (directories) that make up your computer's hard disk.
     do a lot more with them and then you'll get it.
 \item Make 20 other directories inside the temp directory in various levels.  Go look at them
     with a graphical file browser.
+\item Make a directory with a space in the name by putting quotes around it: \verb|mkdir "I Have Fun"|
+\item If the \file{temp} directory already exists then you'll get an error.  Use \program{cd} to change to a work directory that you can control and try it there.  On windows \file{Desktop} is a good place.
 \end{enumerate}
 

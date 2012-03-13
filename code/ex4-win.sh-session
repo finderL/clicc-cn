@@ -30,7 +30,7 @@ Mode                LastWriteTime     Length Name
 d----        12/17/2011   9:03 AM            things
 
 
-> mkdir -p temp/stuff/things/frank/joe/alex/john
+> mkdir temp/stuff/things/frank/joe/alex/john
 
 
     Directory: C:\Users\zed\temp\stuff\things\frank\joe\alex

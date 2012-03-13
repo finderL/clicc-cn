@@ -1,6 +1,6 @@
 > dir -r
 > cd ..
-> dir -r
+> dir -r -filter "*.txt"
 > cd ..
 > dir -r | more
 >

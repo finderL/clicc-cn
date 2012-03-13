@@ -8,7 +8,7 @@
 
 Mode                LastWriteTime     Length Name
 ----                -------------     ------ ----
-d----        12/17/2011   9:03 AM            iamcool.txt
+-a---        12/17/2011   9:03 AM            iamcool.txt
 
 
 >

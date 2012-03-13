@@ -1,4 +1,5 @@
 > more ex13.txt
+[displays file here]
 > cat ex13.txt
 I am a fun guy.
 Don't you know why?

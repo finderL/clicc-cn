@@ -2,11 +2,14 @@
 
 \section{Do This}
 
-I'm showing you a little trick for typing text into a file very quickly.  If you
-do \verb|cat > somefile.txt| then \program{cat} will read whatever you type and
-then write it to that file.  The important thing, though, is that you have to
-"close" the file by typing CTRL-d (CTRL-z on Windows).  If you can't figure this 
-out just use a text editor to make the \file{newfile.txt} and \file{oldfile.txt}.
+I'm showing you a little trick for typing text into a file very quickly.  If
+you do \verb|cat > somefile.txt| then \program{cat} will read whatever you type
+and then write it to that file.  \emph{On Windows} it's done with \verb|echo > somefile.txt|.
+The important thing, though, is that you have to "close" the
+file by typing CTRL-d.
+
+If you can't figure this out just use a text editor to make the
+\file{newfile.txt} and \file{oldfile.txt}.
 
 \begin{code}{Linux/Mac OSX Exercise 18}
 << d['code/ex18.sh-session|pyg|l'] >>
@@ -30,5 +33,6 @@ files if you put them in quotes.
 \begin{enumerate}
 \item Use quotes to find "new file" and "old file" and "This is".
 \item Take the list of videos you created (or any other list) and use it to find some videos you want to find.
+\item Unix: You can use \verb|-i| to ignore case with \program{grep}.  Try \verb|grep -i new *.txt|
 \end{enumerate}
 

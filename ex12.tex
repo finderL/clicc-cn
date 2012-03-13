@@ -5,7 +5,7 @@ You'll also need a text editor that can make plain text (.txt) files.  Here's
 what you do:
 
 \begin{enumerate}
-\item Open your text editor and type some stuff into a new file. On OSX this could be TextEdit.  On Windows this might be Notepad.  On Linux this could be GEdit.  Any editor will work.
+\item Open your text editor and type some stuff into a new file. On OSX this could be TextWrangler.  On Windows this might be Notepad++.  On Linux this could be GEdit.  Any editor will work.
 \item Save that file to your Desktop and name it \file{ex12.txt}.
 \item In your shell use the commands you know to \emph{copy} this file
     to your \file{temp} directory that you've been working with.
@@ -25,10 +25,17 @@ That's it. To get out of \program{less} just type \verb|q| (as in quit).
 << d['code/ex12-win.sh-session|pyg|l'] >>
 \end{code}
 
+\begin{aside}{Abbreviating "displays file here"}
+In the above output I'm showing \verb|[displays file here]| to "abbreviate" what that program shows.
+I'll do this when I mean to say, "Showing you the output of this program is too complex, so just insert
+what you see on your computer here and pretend I did show it to you."  Your screen will not actually
+show this.
+\end{aside}
+
 \section{You Learned This}
 
 This is one way to look at the contents of a file.  It's useful because, if the
-file is has many lines, it will "page" so that only one screenful at a time
+file has many lines, it will "page" so that only one screenful at a time
 is visible.  In the "Do More" section you'll play with this some more.
 
 
@@ -38,7 +45,9 @@ is visible.  In the "Do More" section you'll play with this some more.
 \item Open your text file again and repeatedly copy-paste the text so that it's about 50-100 lines long.
 \item Copy it to your \file{temp} directory again so you can look at it.
 \item Now do the exercise again, but this time page through it.  On Unix you use
-    the spacebar and \verb|w| (the letter w) to go down and up.  Arrow keys also work. On Windows just hit ENTER.
+    the spacebar and \verb|w| (the letter w) to go down and up.  Arrow keys also work. On Windows just hit spacebar to page through.
 \item Look at some of the empty files you created too.
+\item The \program{cp} command will overwrite files that already exist so be
+    careful copying files around.
 \end{enumerate}
 
