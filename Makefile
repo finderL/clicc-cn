@@ -6,7 +6,6 @@ FINAL=cli-crash-course
 book:
 	dexy
 	cp Makefile output/
-	cp style.sty output/
 	${MAKE} -C output clean $(FINAL).pdf
 	rm -rf output/*.dvi output/*.pdf
 	${MAKE} -C output $(FINAL).pdf
@@ -18,6 +17,7 @@ $(FINAL).pdf:
 	pdflatex -halt-on-error $(FINAL).tex
 
 html: 
+	cd output && cp $(SOURCE)-html.tex $(FINAL).tex
 	cd output && htlatex $(FINAL).tex "book,index=1,2,next,fn-in"
 	gsed -i -f clean.sed output/*.html
 	cat output/fixes.css >> output/$(FINAL).css
@@ -32,8 +32,10 @@ clean:
 
 release: clean $(FINAL).pdf draft $(FINAL).pdf sync
 
-sync: book html
+syncpdf: book
 	rsync -vz output/$(FINAL).pdf $(WEBSITE)/$(FINAL).pdf
+
+sync: syncpdf html
 	rsync -vz output/$(FINAL).html $(WEBSITE)/book/index.html
 	rsync -vz output/*.html output/*.css $(WEBSITE)/book/
 

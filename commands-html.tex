@@ -21,23 +21,29 @@
 }
 { \end{quote} \end{note} }
 
+\newenvironment{Terminal}[1]
+{
+    \begin{source}
+    \caption{\hfill\it #1}
+    \sffamily\small
+}
+{\end{source}}
+
 \newenvironment{code}[1]
 {
-    \begin{framed}
-    \begin{parbox}[t]{\textwidth}
-    {\hfill\it\large #1}
-    \rule{\textwidth}{0.1pt}
-    \tt
+    \begin{source}
+    \caption{\hfill\it #1}
+    \sffamily\small
 }
-{
-    \end{parbox}
-    \end{framed}
-}
+{\end{source}}
 
 \floatstyle{ruled}
 \newfloat{note}{htpb}{lon}
 \floatname{note}{Note}
+\newfloat{source}{H}{los}
+\floatname{source}{Source}
 \newcommand{\listofnotes}{\listof{note}{List Of Notes}}
+\newcommand{\listofsource}{\listof{source}{List Of Source}}
 
 \newcommand{\rfc}[2]
     {
