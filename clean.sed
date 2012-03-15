@@ -12,3 +12,6 @@ d
 /<div class="crosslinks"><p class="noindent">/{
 r header.html
 }
+/<link rel="stylesheet" type="text\/css" href="cli-crash-course.css">/{
+r styles.html
+}
