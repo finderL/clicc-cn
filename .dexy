@@ -12,5 +12,8 @@
     "*.css|jinja" : {  },
     "*.cfg|jinja" : {  },
     "*.txt" : {},
-    "*.sty" : {}
+    "*.sty" : {},
+    "*.html|jinja": {},
+    "*.sed|jinja": {},
+    "$variables": { "PROJECT_NAME": "cli-crash-course"}
 }

@@ -20,7 +20,7 @@ html:
 	cp -r site/js site/css output/
 	cd output && cp $(SOURCE)-html.tex $(FINAL).tex
 	cd output && htlatex $(FINAL).tex "book,index=1,2,next,fn-in"
-	gsed -i -f clean.sed output/*.html
+	gsed -i -f output/clean.sed output/*.html
 	
 view: $(FINAL).pdf
 	evince $(FINAL).pdf
