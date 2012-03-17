@@ -13,7 +13,9 @@
     "*.cfg|jinja" : {  },
     "*.txt" : {},
     "*.sty" : {},
-    "*.html|jinja": {},
+    "styles.html|jinja": {},
+    "tabs.html|jinja": {},
+    "footer.html|jinja": {"inputs": ["ga.html", "comments.html", "course.html", "related.html"]},
     "*.sed|jinja": {},
-    "$variables": { "PROJECT_NAME": "cli-crash-course"}
+    "$variables": { "PROJECT_NAME": "cli-crash-course", "TITLE": "The Command Line Crash Course"}
 }

@@ -9,7 +9,7 @@ s/^ *$//g
 r output/site/footer.html
 d
 }
-/<link rel="stylesheet" type="text\/css" href="{{ PROJECT_NAME}}.css">/{
+/<link rel="stylesheet" type="text\/css" href="{{ PROJECT_NAME }}.css">/{
 r output/site/styles.html
 d
 }

@@ -1,47 +1,8 @@
 </div>
 
-<div id="comments">
-    <a name="comments"><hr/></a>
-
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'learn-code-the-hard-way'; // required: replace example with your forum shortname
-
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-    </div>
-
-    <div id="course">
-        <h1>Take An Online Video Course</h1>
-
-        <p>I will be offering this book as a video course soon.  Stay tuned.</h1>
-
-    </div>
-
-    <div id="related">
-        <h1>Related Books</h1>
-
-        <p>You might want to check out these other books in the series:</p>
-
-        <ol>
-            <li><a href="http://ruby.learncodethehardway.org/">Learn Ruby The Hard Way</a></li>
-            <li><a href="http://regex.learncodethehardway.org/">Learn Regex The Hard Way</a></li>
-            <li><a href="http://sql.learncodethehardway.org/">Learn SQL The Hard Way</a></li>
-            <li><a href="http://c.learncodethehardway.org/">Learn C The Hard Way</a></li>
-            <li><a href="http://learnpythonthehardway.org">Learn Python The Hard Way</a></li>
-        </ol>
-
-        <p>I'll be referencing other books shortly.</p>
-    </div>
+{{ d['comments.html'] }}
+{{ d['course.html'] }}
+{{ d['related.html'] }}
 
 </div>
 
@@ -53,18 +14,8 @@
 </div>
 </div>
 
-<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-24168052-8']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+{{ d['ga.html'] }}
 
 <div>
 </div>
