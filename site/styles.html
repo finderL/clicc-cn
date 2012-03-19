@@ -6,7 +6,11 @@
 <script type="text/javascript" src="http://s3.amazonaws.com/lcthw/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="http://s3.amazonaws.com/lcthw/jquery-ui-1.8.18.custom.min.js"></script>
 <script type="text/javascript">
-			$(function(){
-                    $('#tabs').tabs();
-                });
+    $(function(){
+        if(window.location.hash.match(/#comment*/)) {
+            $('#tabs').tabs({'selected': 1});
+        } else {
+            $('#tabs').tabs();
+        }
+    });
 </script>
