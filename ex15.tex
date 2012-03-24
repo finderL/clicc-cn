@@ -19,10 +19,10 @@ symbols to do this.  Here's a breakdown:
 
 \begin{description}
 \item[$|$] The \verb,|, takes the output from the command on the left, and "pipes" it to the command on the right.  In line 1 you see me do that.
-\item[$<$] The \verb|<| will take and send the input from the file on the right to the program on the left.  You see me do that in line 2.
+\item[$<$] The \verb|<| will take and send the input from the file on the right to the program on the left.  You see me do that in line 2. \emph{This does not work in PowerShell}.
 \item[$>$] The \verb|>| takes the output of the command on the left, then writes it
-    to the file on the right.  You see me do that on line 9. \emph{This does not work in PowerShell}.
-\item[$>>$] The \verb|>| takes the output of the command on the left, then \emph{appends} it
+    to the file on the right.  You see me do that on line 9. 
+\item[$>>$] The \verb|>>| takes the output of the command on the left, then \emph{appends} it
     to the file on the right.  You see me do that on line 9.
 \end{description}
 
