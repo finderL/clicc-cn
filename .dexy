@@ -13,6 +13,7 @@
     "*.cfg|jinja" : {  },
     "*.txt" : {},
     "*.sty" : {},
+    "*.js" : {},
     "styles.html|jinja": {},
     "tabs.html|jinja": {},
     "footer.html|jinja": {"inputs": ["ga.html", "comments.html", "course.html", "related.html"]},

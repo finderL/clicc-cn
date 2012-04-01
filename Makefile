@@ -38,4 +38,5 @@ syncpdf: book
 sync: syncpdf html
 	rsync -avz output/$(FINAL).html $(WEBSITE)/book/index.html
 	rsync -avz output/*.html output/*.css output/css output/js $(WEBSITE)/book/
+	python scripts/s3push.py lcthw output/site/css/*.css output/*.css output/site/js/*.js
 
