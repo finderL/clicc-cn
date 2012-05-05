@@ -1,0 +1,65 @@
+\chapter{路径, 文件夹, 目录 (pwd)}
+
+\section{你要完成的任务}
+
+接下来我要教你如何阅读我展示给你的这些终端会话。你不需要将所有的东西都键入终端，只是
+其中的一部分内容而已：
+
+\begin{enumerate} 
+\item 你\emph{不需要}键入 \verb|$| (unix) 或者
+    \verb|>| (Windows)。这个只是为了标记这是一个终端会话而已。
+\item 你写完 \verb|$ or >| 后面的内容后需要敲击回车键。所以如果你看到了 \verb|$ pwd|，
+那你需要输入 \verb|pwd| 再敲击一次回车键。
+\item 你可以看到输出的内容前面也有一个 \verb|$| 或者 \verb|>| 提示。这些是输出
+内容，你的输出内容和我的应该是一样的。
+\end{enumerate}
+
+让我们先试一个命令，看看你有没有弄明白：
+
+\begin{code}{Linux/Mac OSX 习题 2}
+<< d['code/ex2.sh-session|pyg|l'] >>
+\end{code}
+
+\begin{code}{Windows 习题 2}
+<< d['code/ex2-win.sh-session|pyg|l'] >>
+\end{code}
+
+\begin{aside}{命令提示符之 Windows vs Unix }
+
+为了节约空间同时让你集中精力到重要的命令细节上面，本书将把命令行一开始的部分
+（例如上面的 \verb|PS C:\Users\zed| ）省略掉，只留下一个小小的 \verb|>| 部分。
+这意味着你的命令行和这里看到的会有一点不同，不过这个是正常的，你无须操心。
+
+记住从现在开始，我只通过 \verb|>| 来告诉你这是一个命令行提示。
+
+对于 Unix 命令行提示也一样，不过 Unix 有点不一样，人们习惯使用 \verb|$| 来表示
+命令提示符。
+
+\end{aside}
+
+\section{你学到的东西}
+
+你的命令行和我的看上去不一样，你的可能在 \verb|$| 前面显示了你的用户名以及计算机
+名。Windows 下看上去也会不一样，不过关键的基本格式都是这样的：
+
+\begin{enumerate}
+\item 有一个命令提示符。
+\item 你输入一条命令，例如这里的 pwd。
+\item 你得到一些输出。
+\item 重复上述步骤。
+\end{enumerate}
+
+你正好还学会了 \program{pwd} 的功能，它的意思是“打印工作目录(print working
+directory)”。目录是什么东西？就是文件夹而已。文件夹和目录是一样的东西，这两个
+词可以交替使用。当你打开文件浏览器，通过图形界面寻找文件，那你就是在访问文件夹。
+这些文件夹和我们后面要用到的目录完全是同一回事。
+
+\section{更多练习}
+
+\begin{enumerate}
+\item 输入 \program{pwd} 20 次，每次输入都念一遍“print working directory”。
+\item 记下命令行显示的路径，用你的文件浏览器找到这个位置。
+\item 我不是开玩笑。写 20 遍，并且朗读出来。别抱怨了，照我说的做。
+\end{enumerate}
+
+

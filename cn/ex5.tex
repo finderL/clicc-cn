@@ -1,0 +1,56 @@
+\chapter{更改目录 (cd)}
+
+\section{你要做的事情}
+
+我将再教一遍终端会话的方法：
+
+\begin{enumerate} 
+\item \verb|$| (unix) 和 \verb|>| (Windows) 是\emph{不需要}写出来的。
+\item 你写完 \verb|$ or >| 后面的内容后需要敲击回车键。如果你看到 \verb|$ cd temp|，
+那你需要输入的是 \verb|cd temp| 然后敲回车。
+\item 敲回车后你会看到输出，输出的前面也会有一个 \verb|$| 或者 \verb|>| 提示符。
+\end{enumerate}
+
+\begin{code}{Linux/Mac OSX 习题 5}
+<< d['code/ex5.sh-session|pyg|l'] >>
+\end{code}
+
+\begin{code}{Windows 习题 5}
+<< d['code/ex5-win.sh-session|pyg|l'] >>
+\end{code}
+
+\section{你学到的东西}
+
+你在上一节习题中创建了不少的目录，现在你所做的是通过 \program{cd} 命令在它们之间
+往来。在上面的终端会话中，我通过使用 \program{pwd} 来检查自己的当前路径，所以
+记住别把 \program{pwd} 的输出也当作要键入的东西。例如第三行有一条 \verb|~/temp| 
+但这只是 \program{pwd} 的输出而已。\emph{别把它也输入了}。
+
+你应该还看到了我可以使用 \verb|..| 来移动到目录的上一层。
+
+
+\section{更多练习}
+
+在图形界面计算机上面学习使用命令行界面（command line interface，CLI），很重要的
+一部分就是弄明白命令行和图形界面是如何互相配合工作的。我开始使用计算机的时候，
+GUI 还不存在，所有的事情都要通过 DOS 命令窗口（CLI）来完成。后来计算机越变越强大，
+人人都能用到图形界面了。对我来说，命令行的目录和图形界面的文件夹都很容易理解。
+
+然而现在大部分人都不理解命令行界面以及路径和目录这些概念。其实这些东西也很难
+学会，只有不停地学习和使用 CLI，直到有一天你豁然开朗，所有 GUI 下做的事情都和 CLI 下的
+事情对应起来了。
+
+早日理解的方法是花一些时间来通过图形界面的文件浏览器来寻找目录，然后通过命令行
+去访问它们，这就是你接下来要做的练习：
+
+\begin{enumerate}
+\item 用一条命令 cd 到 \file{joe} 目录。
+\item 用一条命令回到 \file{temp} 目录，不过不要退到太远了。
+\item 找出如何用一条命令 cd 到你的“home 目录”
+\item cd 到你的 Documents 目录，然后通过你的图形文件浏览器找到这个目录。(Finder, Windows 浏览器, 等等).
+\item cd 到你的 Downloads 目录，然后通过文件浏览器找到这个位置。
+\item 用文件浏览器找到另外一个位置，然后 cd 到这个位置。
+\item 记得你可以为包含空格的目录家一个引号吧？对于任何命令你都可以这么做。加入你
+创建了一个叫 \file{I Have Fun} 的文件夹，那你就可以使用 \verb|cd "I Have Fun"| 这条命令。
+\end{enumerate}
+

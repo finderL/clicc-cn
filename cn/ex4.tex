@@ -1,0 +1,42 @@
+\chapter{创建目录(mkdir)}
+
+\section{你要做的事情}
+
+\begin{code}{Linux/Mac OSX 习题 4}
+<< d['code/ex4.sh-session|pyg|l'] >>
+\end{code}
+
+\begin{code}{Windows 习题 4}
+<< d['code/ex4-win.sh-session|pyg|l'] >>
+\end{code}
+
+\section{你学到的东西}
+
+现在我们输入了一条以上的命令。这些命令是使用 mkdir 的不同方法。mkdir 的功能是
+什么呢？它是用来 make directory（创建目录）的。你不该问这个问题吧？你应该已经
+通过索引卡记住这些了才对。如果你不知道这条，那就说明你要继续在索引卡上下功夫。
+
+创建目录是什么意思？目录又可以叫作“文件夹”，它们是同样的东西。你上面所做的是在
+逐层深入地创建目录，目录有时又叫做路径，这里相当于是说“先到 temp，再到 stuff，然后
+到 things，这就是我要到的地方。”这是对计算机发出的一系列指向，告诉计算机你想要
+把某个东西放到计算机硬盘的某个文件夹（路径）里。
+
+
+\begin{aside}{Windows, 斜杠和反斜杠}
+本书中我使用斜杠 \verb|/| (slash)来表示路径，因为所有的计算机都是这么做的。不过，
+Windows 用户应该知道，反斜杠 \verb|\| (backslash)也可以实现同样的功能，别的
+Windows 用户可能认为这才是期望的用法。
+\end{aside}
+
+\section{更多练习}
+
+\begin{enumerate}
+\item 你可能觉得路径的概念还是有些绕人。别担心，我们会做大量的练习让你深入理解。
+\item 在 temp 下面再创建 20 个别的目录，深度可以各不相同，然后用文件浏览器检查
+你创建的目录。
+\item 创建一个名称包含空格的目录，方法是为名称添加一个引号：\verb|mkdir "I Have Fun"|
+\item 如果 \file{temp} 目录已经存在，你要创建它时将会得到一条错误信息。使用 
+\program{cd} 转到一个别的目录下面试试创建 temp 目录，如果是 Windows 的话，\file{Desktop}
+是个不错的选择。
+\end{enumerate}
+

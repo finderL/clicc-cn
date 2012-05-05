@@ -1,0 +1,40 @@
+\chapter{在多个目录中切换 (pushd, popd)}
+
+\section{你要完成的任务}
+
+\begin{code}{Linux/Mac OSX 习题 8}
+<< d['code/ex8.sh-session|pyg|l'] >>
+\end{code}
+
+\begin{code}{Windows 习题 8}
+<< d['code/ex8-win.sh-session|pyg|l'] >>
+\end{code}
+
+\section{你学到的东西}
+
+如果你用到这些命令，那你就非常接近编程领域了，不过这些命令非常好用，所以我非教你
+不可。这些命令可以让你临时跑到某个不同的目录中，然后再回到你之前的目录，并且方便
+地在两者之间切换。
+
+\program{pushd} 命令会将你目前所在的目录“推送(push)”到一个列表中以供后续使用，
+然后让你\emph{转入}到另一个目录中。它的意思大致是：“记住我的现在位置，然后到这个地方去。”
+
+\program{popd} 命令会将你上次 push 过的目录从列表中“弹出(pop)”，然后让你回到
+这个被“弹出”的目录。
+
+最后，在 Unix 中的 \program{pushd} 有点不同，如果你运行时不添加任何参数，那么
+它就会让你再当前目录和你上一次 push 过的目录之间切换，这个方法可以让你很方便地
+在两个目录之间切换。\emph{不过 PowerShell 中这样做是不灵的。}
+
+
+\section{更多练习}
+
+\begin{enumerate}
+\item 使用这些命令在你计算机目录之间多切换几次。
+\item 删掉 \file{i/like/icecream} 这些目录，然后自己创建一些目录，在它们之间切换。
+\item 向自己解释 \program{pushd} 和 \program{popd} 的输出的意义。有没有发现它的
+    工作模式有点像一个堆栈。
+\item 前面已经教过了，记住 \verb|mkdir -p| 会创建一个完整的多层目录，即使中间
+    目录不存在也能成功。这也是我创建本习题一开始所做的事情。
+\end{enumerate}
+

@@ -1,0 +1,35 @@
+\chapter{列出目录下的内容 (ls)}
+
+\section{你要完成的任务}
+
+开始之前，确认你已经 \program{cd} 到了 temp 的上一级目录。如果你不确定现在
+在哪个目录里，那就是用 \program{pwd} 找出来。
+
+\begin{code}{Linux/Mac OSX 习题 6}
+<< d['code/ex6.sh-session|pyg|l'] >>
+\end{code}
+
+\begin{code}{Windows 习题 6}
+<< d['code/ex6-win.sh-session|pyg|l'] >>
+\end{code}
+
+\section{你学到的东西}
+
+\program{ls} 命令列出了你当前所在的目录下的内容。你看到我使用了 \program{cd}
+变更目录，然后列出里边的内容，这样我就知道接下来该到哪个目录下面去了。
+
+ls 命令有很多的选项，不过你后面会通过学习 \program{help} 来自己找到这些东西。
+
+\section{更多练习}
+
+\begin{enumerate}
+\item \emph{输入每一条命令！} 要学习这些命令，你必须输入这些命令。\emph{光阅读是不够的}。
+    这一点我以后就不跟你啰嗦了。
+\item 如果你用 Unix，那就在 \file{temp} 目录中试一下 \verb|ls -lR| 命令。
+\item Windows 下一样的功能可以通过 \verb|dir -R| 完成。
+\item 使用 \program{cd} 进到别的目录下，然后通过 \program{ls} 看看里边有什么内容。
+\item 在笔记本里记下你的问题。我知道你会有些问题，因为对于这条命令我并没讲全。
+\item 记住如果你在路径中迷失了，就使用 \program{ls} 和 \program{pwd} 来找出你的
+    当前路径，然后通过 \program{cd} 到达你的目的路径即可。
+\end{enumerate}
+

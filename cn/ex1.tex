@@ -1,0 +1,140 @@
+\chapter{准备工作}
+
+这本书将带领你做三件事情：
+
+\begin{enumerate}
+\item 在你的 shell，或者命令行(command line)，或者终端(Terminal)，或者 PowerShell 写一些东西。
+\item 弄懂你刚写的东西。
+\item 自己再多写一些东西。
+\end{enumerate}
+
+第一节练习中，你的目的是打开你的终端并确认它能正常工作，以便继续学习下去。
+
+\section{你要完成的任务}
+
+准备好你的 Terminal，shell，PowerShell，设置好以便快速访问它们。
+
+\subsection{Mac OSX}
+
+对于 Mac OSX 你要做的如下：
+
+\begin{enumerate}
+\item 按住 COMMAND 键再敲击空格键。
+\item 右上方会跳出蓝色的“搜索栏”。
+\item 输入： terminal
+\item 点击长得像一个黑盒子的 Terminal 应用程序。
+\item 这样 Terminal 就打开了。
+\item 你可以跑到 Dock 里面按着 CTRL 点击，在打开的菜单中选择 \verb|Options->Keep| 在 Dock 中。
+\end{enumerate}
+
+这样你就打开了 Terminal，而且 Dock 里也有了快速访问链接。
+
+\subsection{Linux}
+
+如果你已经在使用 Linux，那我就可以假设你已经知道如何找到 terminal 了。在你的 Window Manager
+里搜寻名字像 "Shell" 或者 "Terminal" 的东西就可以了。
+
+\subsection{Windows}
+
+Windows 下我们将使用 PowerShell。人们以前用的一个叫 cmd.exe 的程序，不过和 PowerShell
+比起来它的可用性差很多。如果你用的是 Windows 7 以上的系统，就照下面的做：
+
+\begin{enumerate}
+\item 点击 Windows 菜单。
+\item 在搜索框中输入：powershell
+\item 敲击回车键。
+\end{enumerate}
+
+如果你装的不是 Windows 7，那你应该认真考虑一下升级事宜。如果你实在不想升级，那就
+试着从\href{http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=16818}{微软的下载中心}
+安装一下。这得靠你自己了，因为我没有装 Windows XP，写不出安装流程来，不过希望 XP
+下的 PowerShell 的使用体验也是一样的吧。
+
+\section{你学会的东西}
+
+你学会了如何打开你的 terminal，这是继续本书所必须的。
+
+\begin{aside}{躲开所谓的黑客和他们的 zsh}
+
+如果你有一个挺聪明而且懂 Linux 的朋友，再如果他介绍 bash 之外的 shell 给你，那你
+应该忽略他们的建议。我教你的是 bash，就是这样。他们会说 zsh 会让你的 IQ 多长 30
+个点，并且让你在股票市场上赚到腰缠万贯，别理他们就是了。你的目的只是学会足够的
+技能，在你这个技能等级上，使用哪个 shell 其实不会影响到什么东西。
+
+接下来的一个建议就是躲开 IRC 以及那些“黑客”常去的地方。他们会教你一些破坏你电脑
+的命令并以此为乐。例如这条经典的 \verb|rm -rf /|，\emph{千万别输这条命令！}
+离黑客远点，如果你需要帮助，就找你能信任的人，别去找网上乱七八糟的二货。
+\end{aside}
+
+\section{额外任务}
+
+本节练习有一个很大的“额外任务”部分。其他的练习没这么多的额外任务要做，不过我
+要让你通过记忆的方式向自己灌输足够的知识。跟着我走就行了，这会让你后面的学习
+像丝一般顺畅。
+
+\subsection{Linux/Mac OSX}
+
+用索引卡片写下所有的命令，一张卡片写一条，正面写下命令，背面写下解释。每次看书就
+学习一次，每次学个 15 分钟左右。
+
+\begin{description}
+\item[pwd] print working directory（打印工作目录）
+\item[hostname] my computer's network name（电脑在网络中的名称）
+\item[mkdir] make directory（创建路径）
+\item[cd] change directory（更改路径）
+\item[ls] list directory（列出路径下的内容）
+\item[rmdir] remove directory（删除路径）
+\item[pushd] push directory（推入路径）
+\item[popd] pop directory（推出路径）
+\item[cp] copy a file or directory（复制文件或路径）
+\item[mv] move a file or directory（移动文件或路径）
+\item[less] page through a file（逐页浏览文件）
+\item[cat] print the whole file（打印输出整个文件）
+\item[xargs] execute arguments（执行参数）
+\item[find] find files（寻找文件）
+\item[grep] find things inside files（在文件中查找内容）
+\item[man] read a manual page（阅读手册）
+\item[apropos] find what man page is appropriate（寻找恰当的手册页面）
+\item[env] look at your environment（查看你的环境）
+\item[echo] print some arguments（打印一些参数）
+\item[export] export/set a new environment variable（导出/设定一个新的环境变量）
+\item[exit] exit the shell（离开 shell）
+\item[sudo] DANGER! become super user root DANGER!（成为超级用户或 root，危险命令！）
+\item[chmod] change permission modifiers（修改文件许可权限）
+\item[chown] change ownership（修改文件的所有者）
+\end{description}
+
+\subsection{Windows}
+
+If you're using Windows then here's your list of commands:
+
+\begin{description}
+\item[pwd] print working directory（打印工作目录）
+\item[hostname] my computer's network name（电脑在网络中的名称）
+\item[mkdir] make directory（创建路径）
+\item[cd] change directory（更改路径）
+\item[ls] list directory（列出路径下的内容）
+\item[rmdir] remove directory（删除路径）
+\item[pushd] push directory（推入路径）
+\item[popd] pop directory（推出路径）
+\item[cp] copy a file or directory（复制文件或路径）
+\item[robocopy] robust copy（更可靠的复制命令）
+\item[mv] move a file or directory（移动文件或路径）
+\item[more] page through a file（打印输出整个文件）
+\item[type] print the whole file（打印输出整个文件）
+\item[forfiles] run a command on lots of files（在一大堆文件上面运行一条命令）
+\item[dir /r] find files（寻找文件）
+\item[select-string] find things inside files（在文件中查找内容）
+\item[help] read a manual page（阅读手册）
+\item[helpctr] find what man page is appropriate（寻找恰当的手册页面）
+\item[echo] print some arguments（打印一些参数）
+\item[set] export/set a new environment variable（导出/设定一个新的环境变量）
+\item[exit] exit the shell（离开 shell）
+\item[runas] DANGER! become super user root DANGER!（成为超级用户或 root，危险命令！）
+\item[attrib] change permission modifiers（修改文件许可权限）
+\item[iCACLS] change ownership（修改文件的所有者）
+\end{description}
+
+不停地练习，直到你可以看到一条命令，然后能立即说出它的功能为止。然后反过来也能
+说出实现每个功能所需的命令。通过这样的方式你可以为自己建立语汇，不过如果你觉得
+烦了，也别强迫自己在上面花太多时间。
