@@ -1,0 +1,57 @@
+\chapter{寻找文件 (find, DIR -R)}
+
+\section{任务}
+
+这个练习将三个概念合并到一条命令中来。我将展示给你如何找到你所有的文本文件，并
+主页浏览它们。
+
+\begin{code}{Linux/Mac OSX 练习 17}
+<< d['code/ex17.sh-session|pyg|l'] >>
+\end{code}
+
+\begin{code}{Windows 练习 17}
+<< d['code/ex17-win.sh-session|pyg|l'] >>
+\end{code}
+
+\section{知识点}
+
+你学会了用 \program{find} (Windows 的 \program{dir -r}) 命令来搜索所有以  \file{.txt} 
+结尾的文件，然后用 \program{less} (Windows 的 \program{more}) 来查看结果。
+
+以下是 Unix 下的详解：
+
+\begin{enumerate}
+\item 首先我进到 \file{temp} 目录下。
+\item 然后我简单执行了寻找(find)命令，因为这里也没有多少 \file{.txt} 文件。这个
+    命令跟一句话差不多：“嘿，\program{find}，从这里(.)开始，找到所有叫做"*.txt"
+    的文件，然后将它们打印出来。”将命令用跟计算机对话的方式记下来，这是一个不错的
+    记忆方法。
+\item 接下来我到上一层目录执行了相同的命令，不过这次我将输出转向到了 \program{less} 
+    中。这条命令执行起来可能会花一些时间，需要你耐心等待一下。
+\item 然后我又执行了一遍，不过这次的时间可能会真的有点长，所以你可以随时用  CTRL-c 
+    把它中断掉。
+\end{enumerate}
+
+Windows 下也差不多：
+
+\begin{enumerate}
+\item 然后我简单执行了 DIR 命令，因为这里也没有多少 \file{.txt} 文件。这条命令的
+    意思是“列出当前目录以及所有子目录中的所有东西”。这是一个循环命令(recursive command)。
+\item 接下来我到上一层目录执行了同样的命令，不过这次我把输出转向到 \program{more}。
+    这条命令时间会有点长，需要耐心等待。
+\item 然后我又执行了一遍，不过这次的时间可能会真的有点长，所以你可以随时用  CTRL-c 
+    把它中断掉。
+\end{enumerate}
+
+\section{更多任务}
+
+\begin{enumerate}
+\item Unix：找出你的 \program{find} 索引卡，在描述面写下“find STARTDIR -name WILDCARD -print”。
+    记住这个命令的格式，用我给你的句式辅助记忆。
+\item Windows：同上，不过要写的是“dir -r -filter”。
+\item 你可以将 \verb|.| 替换为任何目录，试着换一个目录搜索一下。
+\item 寻早你计算机中所有的视频文件，从 home 目录开始找起，将输出用 \verb|>| 保存
+    到一个文件中。记住你可以用 \verb|SOMECOMMAND > SOMEFILE.txt| 这样的格式，它
+    会将 SOMECOMMAND 的输出写入到 SOMEFILE.txt 中。
+\end{enumerate}
+

@@ -1,0 +1,29 @@
+\chapter{创建空文件 (Touch, New-Item)}
+
+\section{任务}
+
+\begin{code}{Linux/Mac OSX 练习 9}
+<< d['code/ex9.sh-session|pyg|l'] >>
+\end{code}
+
+\begin{code}{Windows 练习 9}
+<< d['code/ex9-win.sh-session|pyg|l'] >>
+\end{code}
+
+\section{知识点}
+
+你学会了如何创建空文件。在 Unix 中你要用 \program{touch}，它还有一个功能就是
+修改文件的时间。我除了用它创建空文件以外，很少用它做别的事情。Windows 中
+没有这个命令，所以你要学习使用  \program{New-Item} 命令，它实现的功能是一样的，
+不过它还可以创建新目录。
+
+\section{更多任务}
+
+\begin{enumerate}
+\item Unix：创建一个目录，转到这个目录下，然后在其中创建一个文件，然后回到
+    上一层目录，对你创建的目录运行 \program{rmdir}，你\emph{应该}会看到一个错误，
+    试着弄懂为什么你会碰到这个错误。
+\item Windows：做同样的事情，不过你不会看到错误。你会看到一个提示，问你是否真的
+    要删除这个目录。
+\end{enumerate}
+

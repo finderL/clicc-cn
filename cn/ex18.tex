@@ -1,0 +1,36 @@
+\chapter{文件查找内容 (grep, select-string)}
+
+\section{任务}
+
+我来教你一个快速将文本写入一个文件的方法。如果你执行 \verb|cat > somefile.txt|，
+\program{cat} 将会把你接下来键入的所有东西都写入这个文件中，Windows 下你需要
+执行 \verb|echo > somefile.txt|。很重要的一点是，你需要用 CTRL-d 来结束你的输入。
+
+如果你现在学不会这个操作，你可以使用文本编辑器来创建 \file{newfile.txt} 和 
+\file{oldfile.txt}。
+
+\begin{code}{Linux/Mac OSX 练习 18}
+<< d['code/ex18.sh-session|pyg|l'] >>
+\end{code}
+
+这个技巧在 Windows 下的用法差不多，只不过你要执行的是 \verb|echo > somefile.txt|，
+而且接下来命令行会提示让你输入每一行，当你输入一个空行（直接回车）时，这条命令也就结束了。
+
+\begin{code}{Windows 练习 18}
+<< d['code/ex18-win.sh-session|pyg|l'] >>
+\end{code}
+
+\section{知识点}
+
+你创建了两个几乎一样的文件，只不过其中一个里边有“new”，而另一个是“old”。然后你
+在这些文件中搜索不同的文字，你可以查找单词，不过如果你为要寻找的东西加上引号，
+你也可以寻找整句内容。
+
+\section{更多任务}
+
+\begin{enumerate}
+\item 使用引号寻找 "new file" 和 "old file" 以及 "This is"。
+\item 在你创建的视频文件列表（或者任何文件列表）中查找你想要找到的某个文件。
+\item Unix：你可以使用 \verb|-i| 让 \program{grep} 忽略大小写。执行 \verb|grep -i new *.txt| 试试看。
+\end{enumerate}
+

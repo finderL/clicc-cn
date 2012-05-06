@@ -1,0 +1,35 @@
+\chapter{流水式文件内容显示 (cat)}
+
+你需要更多的准备工作，这个过程也会让你习惯这个工作流程：你在一个程序中创建文件，
+然后通过命令行对其进行处理。使用练习 12 中的 \emph{文本编辑器} 创建一个叫 
+ \file{ex13.txt} 的文件，不过这次将其直接保存到 \file{temp} 目录下。
+
+\section{任务}
+
+\begin{code}{Linux/Mac OSX 练习 13}
+<< d['code/ex13.sh-session|pyg|l'] >>
+\end{code}
+
+\begin{code}{Windows 练习 13}
+<< d['code/ex13-win.sh-session|pyg|l'] >>
+\end{code}
+
+记住，我写的 \verb|[displays file here]| 是表示我略掉了命令的输出，这样我就
+不用把东西详尽地展示给你了。
+
+
+\section{知识点}
+
+我的诗怎么样？拿个诺贝尔奖没问题吧？不管怎样，你已经学到了第一个命令，而我只是
+让你检查你的文件已经在那里了。然后你使用 \program{cat} 将文件内容显示到屏幕上。
+这个命令会将整个文件一次输出到屏幕，不会分页也不会中间停顿。为了展示这一点，我让
+你对 \file{ex12.txt} 执行 \program{cat} 命令，结果就是一下输出了文本中所有的行。 
+
+\section{更多任务}
+
+\begin{enumerate}
+\item 再创建几个文本文件，然后用 \program{cat} 逐一打开。
+\item Unix：试试 \verb|cat ex12.txt ex13.txt|，看看结果是怎样的。
+\item Windows：试试 \verb|cat ex12.txt,ex13.txt| 看看结果。
+\end{enumerate}
+

@@ -1,0 +1,29 @@
+\chapter{通配符匹配}
+
+\section{任务}
+
+\begin{code}{Linux/Mac OSX 练习 16}
+<< d['code/ex16.sh-session|pyg|l'] >>
+\end{code}
+
+\begin{code}{Windows 练习 16}
+<< d['code/ex16-win.sh-session|pyg|l'] >>
+\end{code}
+
+\section{知识点}
+
+有时你需要用一条命令处理一批文件。处理的方法是使用星号 \verb|*| 来表示“任何文件”。
+每当你使用了星号，命令行将会对匹配到非星号字符的文件生成一个列表。
+
+这个练习中你用了各种方法列出你生成的文件。我的目录里还有一些多余的文件，你也许
+也有一些。关键点在于，当你写下 \verb|*.txt| 时，你的意思是说“任何以 .txt 结尾
+的文件。”
+
+最后我们用 \verb|rm *.txt| 来删除 \file{temp} 目录下的所有 .txt 文件。
+
+\section{更多任务}
+
+\begin{enumerate}
+\item 将 \verb|*| 加到你的速记卡中。在背后写下“通配符，用来匹配任何内容，例如 *.txt”。
+\end{enumerate}
+

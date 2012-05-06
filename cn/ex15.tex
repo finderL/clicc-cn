@@ -1,0 +1,36 @@
+\chapter{管道和重定向}
+
+\section{任务}
+
+\begin{code}{Linux/Mac OSX 练习 15}
+<< d['code/ex15.sh-session|pyg|l'] >>
+\end{code}
+
+\begin{code}{Windows 练习 15}
+<< d['code/ex15-win.sh-session|pyg|l'] >>
+\end{code}
+
+\section{知识点}
+
+现在我们将接触命令行比较酷的知识点：重定向(redirection)。这个概念的意义在于
+你可以修改程序的输入和输出的走向，你要通过  \verb|<| (小于号)、\verb|>| (大于号)、
+\verb,|, (管道符)来做到这些。以下是详细解说：
+
+\begin{description}
+\item[$|$] \verb,|, 将左边命令的输出导向到右边命令中去。第 1 行向你演示了这一点。
+\item[$<$] \verb|<| 将右边的文件作为输入发送给左边的程序。你看到第 2 行所做的就
+   是这个。\emph{PowerShell 不支持这种操作。}
+\item[$>$] \verb|>| 将左边命令的输出写入到右边的文件中去。第 9 行展示了这一点。
+\item[$>>$] \verb|>>| 将左边命令的输出\emph{追加(append)}到右边的文件中去。我在
+   第 9 行做了这样的操作。
+\end{description}
+
+还有一些别的符号，不过现在我们只学这些就够用了。
+
+\section{更多任务}
+
+\begin{enumerate}
+\item 制作一些索引卡用来辅助记忆这些符号。将符号写在一侧，它的意义写在另一侧，
+    像记忆命令一样将这些符号记下来。
+\end{enumerate}
+

@@ -1,0 +1,17 @@
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link rel="stylesheet" type="text/css" href="css/reset.css"> 
+<link rel="stylesheet" type="text/css" href="css/typography.css"> 
+<link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/lcthw/{{ PROJECT_NAME }}.css">
+<link rel="stylesheet" type="text/css" href="css/site.css">
+<link type="text/css" href="http://s3.amazonaws.com/lcthw/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+<script type="text/javascript" src="http://s3.amazonaws.com/lcthw/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://s3.amazonaws.com/lcthw/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        if(window.location.hash.match(/#comment*/)) {
+            $('#tabs').tabs({'selected': 1});
+        } else {
+            $('#tabs').tabs();
+        }
+    });
+</script>

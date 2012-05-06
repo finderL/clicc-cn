@@ -1,0 +1,52 @@
+\chapter{查看文件内容 (less, MORE)}
+
+要完成这个练习，你将用到你学过的一些命令，另外你还需要一个文本编辑器来创建
+纯文本(.txt)文件，以下是你要做的准备工作：
+
+\begin{enumerate}
+\item 打开文本编辑器，在新文本中输入一些东西。在 OSX 中你可以用
+    TextWrangler，在 Windows 下你可以使用 Notepad++，在 Linux 中你可以用 
+    Gedit，随便什么编辑器都可以。
+\item 保存该文件到桌面，将其命名为 \file{ex12.txt}。
+\item 在命令行(shell)使用你学过的命令将该文件拷贝(copy)到你的工作目录，也就是
+    \file{temp} 目录中去。
+\end{enumerate}
+
+做好准备工作以后，就可以完成任务了。
+
+\section{任务}
+
+\begin{code}{Linux/Mac OSX 练习 12}
+<< d['code/ex12.sh-session|pyg|l'] >>
+\end{code}
+
+就是这样子。要推出 \program{less}，只要输入 \verb|q| 即可。这个 \verb|q| 
+的意思是推出(quit)。
+
+\begin{code}{Windows 练习 12}
+<< d['code/ex12-win.sh-session|pyg|l'] >>
+\end{code}
+
+\begin{aside}{"displays file here"表示略掉了输出内容}
+上面的输出中我用 \verb|[displays file here]| 来指代程序的输出。在后面的练习中，
+如果碰到复杂情况无法向你展示输出内容，我就会用这个来指代你的输出。你的屏幕不会
+显示这句话。
+\end{aside}
+
+\section{知识点}
+
+这是查看文件内容的一个方法。它有用的地方在于，如果文件内容有很多行，它会将其
+分页，这样就会每次显示一页。在“更多任务”中你会看到更多相关的练习。
+
+\section{更多任务}
+
+\begin{enumerate}
+\item 再次打开你的文本文件，重复复制粘贴若干次，让你的文本长度约等于 50 至 100 
+    行。
+\item 将它再次复制到 \file{temp} 目录下，这样你就可以通过命令行查看了。
+\item 再做一遍练习，不过这次你要逐页浏览文档。在 Unix 下使用空格键和 \verb|w| 键
+    上下翻页，使用方向键也可以，不过在 Windows 下你就只能用空格键向下逐页浏览了。
+\item 查看你创建的空文件的内容。
+\item \program{cp} 命令会覆盖已经存在的文件，复制文件时要留意这一点。
+\end{enumerate}
+

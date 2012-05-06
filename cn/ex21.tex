@@ -1,0 +1,31 @@
+\chapter{环境变量 (env, echo, Env:)}
+
+\section{任务}
+
+\begin{code}{Linux/Mac OSX 练习 21}
+<< d['code/ex21.sh-session|pyg|l'] >>
+\end{code}
+
+\begin{code}{Windows 练习 21}
+<< d['code/ex21-win.sh-session|pyg|l'] >>
+\end{code}
+
+\section{知识点}
+
+你的命令行(shell)有一些“隐藏的变量”，它们可以改变程序执行的效果。这个练习中我
+首先打印出了我的环境变量，将它们输出到屏幕，然后我又执行了一遍，将输出转向到 
+\program{grep} 并找到了包含我的用户名的环境变量。最后，我将一个叫做 TESTING 的
+环境变量的值设为 "1 2 3"。
+
+这个你也许不会经常用到，不过有时你要配置某些东西时会要修改这些环境变量。PATH 
+变量就是一个很好的例子，它决定了系统是按怎样的顺序搜索到你要执行的命令的。后面的
+练习中你将学到如何修改 PATH。
+
+
+\section{更多任务}
+
+\begin{enumerate}
+\item 我要求你上网搜索，研究一下如何修改你的计算机中的 PATH。试着只用命令行来完成
+    这个任务。
+\end{enumerate}
+
