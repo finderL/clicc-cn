@@ -21,7 +21,7 @@ html:
 	cp -r site/js site/css output/
 	cd output && cp $(SOURCE)-html.tex $(FINAL).tex
 	cd output && htlatex $(FINAL).tex "book,index=1,2,next,fn-in,charset=utf-8,NoFonts" "-cunihtf -utf8"
-	gsed -i -f output/clean.sed output/*.html
+	sed -i -f output/clean.sed output/*.html
 	sed -i -re '/<head><title>/c\<head><title><\/title>' output/*.html
 	sed -i -re '/<head>/d;/<\/title>/c\<head><title><\/title>' output/$(FINAL).html
 	python clean.py output/*.html
